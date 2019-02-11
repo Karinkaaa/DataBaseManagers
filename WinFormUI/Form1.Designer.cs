@@ -32,14 +32,14 @@ namespace WinFormUI
         {
             this.ManagersGrid = new System.Windows.Forms.DataGridView();
             this.NameText = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.SurnameText = new System.Windows.Forms.TextBox();
             this.AgeText = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PhoneText = new System.Windows.Forms.TextBox();
             this.SaveManager = new System.Windows.Forms.Button();
             this.NameTextLabel = new System.Windows.Forms.Label();
-            this.SurnameText = new System.Windows.Forms.Label();
+            this.SurnameTextLabel = new System.Windows.Forms.Label();
             this.AgeTextLable = new System.Windows.Forms.Label();
-            this.PhoneText = new System.Windows.Forms.Label();
+            this.PhoneTextLabel = new System.Windows.Forms.Label();
             this.RemoveManager = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ManagersGrid)).BeginInit();
             this.SuspendLayout();
@@ -59,12 +59,12 @@ namespace WinFormUI
             this.NameText.Size = new System.Drawing.Size(124, 20);
             this.NameText.TabIndex = 1;
             // 
-            // textBox2
+            // SurnameText
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 17);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(157, 20);
-            this.textBox2.TabIndex = 2;
+            this.SurnameText.Location = new System.Drawing.Point(148, 17);
+            this.SurnameText.Name = "SurnameText";
+            this.SurnameText.Size = new System.Drawing.Size(157, 20);
+            this.SurnameText.TabIndex = 2;
             // 
             // AgeText
             // 
@@ -73,12 +73,12 @@ namespace WinFormUI
             this.AgeText.Size = new System.Drawing.Size(54, 20);
             this.AgeText.TabIndex = 3;
             // 
-            // textBox4
+            // PhoneText
             // 
-            this.textBox4.Location = new System.Drawing.Point(371, 17);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 20);
-            this.textBox4.TabIndex = 4;
+            this.PhoneText.Location = new System.Drawing.Point(371, 17);
+            this.PhoneText.Name = "PhoneText";
+            this.PhoneText.Size = new System.Drawing.Size(168, 20);
+            this.PhoneText.TabIndex = 4;
             // 
             // SaveManager
             // 
@@ -101,15 +101,15 @@ namespace WinFormUI
             this.NameTextLabel.Text = "Name";
             this.NameTextLabel.Click += new System.EventHandler(this.Name_Click);
             // 
-            // SurnameText
+            // SurnameTextLabel
             // 
-            this.SurnameText.AutoSize = true;
-            this.SurnameText.Location = new System.Drawing.Point(204, 40);
-            this.SurnameText.Name = "SurnameText";
-            this.SurnameText.Size = new System.Drawing.Size(49, 13);
-            this.SurnameText.TabIndex = 7;
-            this.SurnameText.Text = "Surname";
-            this.SurnameText.Click += new System.EventHandler(this.Surname_Click);
+            this.SurnameTextLabel.AutoSize = true;
+            this.SurnameTextLabel.Location = new System.Drawing.Point(204, 40);
+            this.SurnameTextLabel.Name = "SurnameTextLabel";
+            this.SurnameTextLabel.Size = new System.Drawing.Size(49, 13);
+            this.SurnameTextLabel.TabIndex = 7;
+            this.SurnameTextLabel.Text = "Surname";
+            this.SurnameTextLabel.Click += new System.EventHandler(this.Surname_Click);
             // 
             // AgeTextLable
             // 
@@ -121,15 +121,15 @@ namespace WinFormUI
             this.AgeTextLable.Text = "Age";
             this.AgeTextLable.Click += new System.EventHandler(this.label3_Click);
             // 
-            // PhoneText
+            // PhoneTextLabel
             // 
-            this.PhoneText.AutoSize = true;
-            this.PhoneText.Location = new System.Drawing.Point(429, 40);
-            this.PhoneText.Name = "PhoneText";
-            this.PhoneText.Size = new System.Drawing.Size(38, 13);
-            this.PhoneText.TabIndex = 9;
-            this.PhoneText.Text = "Phone";
-            this.PhoneText.Click += new System.EventHandler(this.label4_Click);
+            this.PhoneTextLabel.AutoSize = true;
+            this.PhoneTextLabel.Location = new System.Drawing.Point(429, 40);
+            this.PhoneTextLabel.Name = "PhoneTextLabel";
+            this.PhoneTextLabel.Size = new System.Drawing.Size(38, 13);
+            this.PhoneTextLabel.TabIndex = 9;
+            this.PhoneTextLabel.Text = "Phone";
+            this.PhoneTextLabel.Click += new System.EventHandler(this.label4_Click);
             // 
             // RemoveManager
             // 
@@ -148,14 +148,14 @@ namespace WinFormUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 533);
             this.Controls.Add(this.RemoveManager);
-            this.Controls.Add(this.PhoneText);
+            this.Controls.Add(this.PhoneTextLabel);
             this.Controls.Add(this.AgeTextLable);
-            this.Controls.Add(this.SurnameText);
+            this.Controls.Add(this.SurnameTextLabel);
             this.Controls.Add(this.NameTextLabel);
             this.Controls.Add(this.SaveManager);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.PhoneText);
             this.Controls.Add(this.AgeText);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.SurnameText);
             this.Controls.Add(this.NameText);
             this.Controls.Add(this.ManagersGrid);
             this.Name = "Form1";
@@ -190,14 +190,14 @@ namespace WinFormUI
 
         private System.Windows.Forms.DataGridView ManagersGrid;
         private System.Windows.Forms.TextBox NameText;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox SurnameText;
         private System.Windows.Forms.TextBox AgeText;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PhoneText;
         private System.Windows.Forms.Button SaveManager;
         private System.Windows.Forms.Label NameTextLabel;
-        private System.Windows.Forms.Label SurnameText;
+        private System.Windows.Forms.Label SurnameTextLabel;
         private System.Windows.Forms.Label AgeTextLable;
-        private System.Windows.Forms.Label PhoneText;
+        private System.Windows.Forms.Label PhoneTextLabel;
         private System.Windows.Forms.Button RemoveManager;
     }
 }
